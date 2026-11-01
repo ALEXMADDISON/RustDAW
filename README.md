@@ -1,6 +1,10 @@
+<img width="3440" height="1408" alt="image" src="https://github.com/user-attachments/assets/4196bf19-a20e-407e-a01a-efebe1fb7c97" />
+
+
 # Rust DAW
 
-Open-source DAW in Rust (egui + cpal). Logic-style dark UI.
+
+Open-source DAW in Rust (egui + cpal).
 
 * 100-track playlist: audio clips, MIDI clips, per-track mute/solo/arm/volume, recording, cycle loop
 * Piano roll for MIDI clips (click to add, drag to move, edge to resize, right-click to delete)
@@ -14,14 +18,3 @@ Open-source DAW in Rust (egui + cpal). Logic-style dark UI.
 Windows needs the "Desktop development with C++" build tools (MSVC) for Rust and for the bundled MP3 encoder.
 Linux: `libasound2-dev pkg-config` (and `libxkbcommon-x11-0` etc. for the window).
 
-## Tests
-    cargo test --workspace
-VST3 integration tests use the plugins in `testplugins/` (see its README); they are skipped if the bundles are not found.
-
-## Layout
-`dsp` (oscillator/envelope/sample) - `native-plugins` (synth, sampler) - `plugin-host` (VST3 host) -
-`core-engine` (real-time engine, export) - `project-io` (audio import/export, library watcher, config) -
-`gui` (egui front-end) - `apps/daw` (audio devices + window)
-
-Licence note: MP3 export uses LAME (LGPL) through the `mp3lame-encoder` crate. If you distribute binaries,
-check the LGPL obligations (or build without MP3 export).
