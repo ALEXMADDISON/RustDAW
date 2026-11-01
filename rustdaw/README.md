@@ -65,9 +65,3 @@ These tests are automatically skipped when the required plugin bundles are not f
 | `project-io` | Audio import/export, library watcher, and configuration |
 | `gui` | egui-based user interface |
 | `apps/daw` | Application entry point, audio devices, and window management |
-
-## Licensing
-
-MP3 export uses **LAME (LGPL)** through the `mp3lame-encoder` crate.
-
-If you distribute compiled binaries, make sure to review and comply with the applicable LGPL licensing requirements. Alternatively, you can build without MP3 export support.
