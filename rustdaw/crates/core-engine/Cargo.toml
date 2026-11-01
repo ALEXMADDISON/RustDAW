@@ -1,0 +1,12 @@
+[package]
+name = "core-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dsp.workspace = true
+native-plugins.workspace = true
+plugin-host.workspace = true
+rtrb.workspace = true
+serde.workspace = true
