@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/dsp",
+    "crates/core-engine",
+    "crates/native-plugins",
+    "crates/project-io",
+    "crates/plugin-host",
+    "crates/gui",
+    "apps/daw",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+# Audio I/O + lock-free SPSC ring buffer
+cpal = "0.15"
+rtrb = "0.3"
+# Project serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+symphonia = { version = "0.5", features = ["mp3"] }
+vst3 = "0.3"
+libloading = "0.8"
+dirs = "5"
+mp3lame-encoder = "0.2"
+# GUI
+eframe = { version = "0.27", default-features = false, features = ["glow", "default_fonts", "x11"] }
+egui_dock = "0.12"
+# Internal crates
+dsp = { path = "crates/dsp" }
+core-engine = { path = "crates/core-engine" }
+native-plugins = { path = "crates/native-plugins" }
+project-io = { path = "crates/project-io" }
+plugin-host = { path = "crates/plugin-host" }
+gui = { path = "crates/gui" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"

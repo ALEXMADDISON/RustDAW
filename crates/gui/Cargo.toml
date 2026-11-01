@@ -1,0 +1,23 @@
+[package]
+name = "gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+core-engine.workspace = true
+dsp.workspace = true
+project-io.workspace = true
+plugin-host.workspace = true
+rtrb.workspace = true
+cpal.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+eframe.workspace = true
+egui_dock.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+rfd = "0.15"
+
+[dev-dependencies]
+core-engine.workspace = true

@@ -1,0 +1,13 @@
+[package]
+name = "project-io"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dsp.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+symphonia.workspace = true
+mp3lame-encoder.workspace = true
+dirs.workspace = true
