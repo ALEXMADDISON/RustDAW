@@ -10,10 +10,16 @@ An open-source digital audio workstation (DAW) built with **Rust**, **egui**, an
 
 - **100-track arrangement** — Audio and MIDI clips, with per-track volume, mute, solo, and record-arm controls.
 - **Recording & playback** — Audio recording, real-time playback, and cycle-loop support.
+<img width="3440" height="1408" alt="image" src="https://github.com/user-attachments/assets/9c453b88-fef8-4600-a645-de4f6121b19c" />
+
 - **MIDI piano roll** — Create notes with a click, drag to move, resize by dragging note edges, and right-click to delete.
 - **Instrument support** — Built-in synthesizer, sampler, and VST3 instruments. VST3 plugins can open their own editor windows on Windows.
+<img width="3440" height="1408" alt="image" src="https://github.com/user-attachments/assets/95154660-0708-4c19-b2ee-92d745624ea7" />
+
 - **VST3 effects** — Up to four insert-effect slots per track.
 - **Audio library** — Watch folders for automatic library updates. Drag and drop samples and audio files onto tracks or track headers.
+<img width="3440" height="1408" alt="image" src="https://github.com/user-attachments/assets/2438ce31-ad09-46f3-9238-0c6660e7928d" />
+
 - **Audio export** — WAV (16-bit, 24-bit, and 32-bit float) and MP3 (128–320 kbps).
 - **Fast rendering** — Export audio faster than real time.
 
