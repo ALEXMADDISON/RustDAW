@@ -1,6 +1,6 @@
 <img width="3440" height="1408" alt="image" src="https://github.com/user-attachments/assets/4196bf19-a20e-407e-a01a-efebe1fb7c97" />
 
-
+https://www.youtube.com/watch?v=aHdO5NrkQz8
 # RustDAW 🎛️
 ### A Digital Audio Workstation Written in Rust — Because Apparently Making Music Wasn't Painful Enough.
 
